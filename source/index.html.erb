@@ -241,10 +241,16 @@ a:hover {
       </section>
       <section class="readme-section">
         <h2 class="readme-header">7. Bootstrap setup</h2>
-        <ol>
-          <li>Add `<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">` to the `head` of your HTML document.</li>
-          <li>Play with <code>class="btn btn-primary"</code> and <code>class="list-inline"</code>, your first Bootstrap classes</li>
-        </ol>
+
+        <p>Link Bootstrap stylesheet in the <code>head</code> section of your HTML <strong>before your stylesheet link</strong></p>
+<% code("html") do %>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link href='style.css' rel='stylesheet'>
+</head>
+<% end %>
+          <p>Play with <code>class="btn btn-primary"</code> and <code>class="list-inline"</code>, your first Bootstrap classes</p>
+
       </section>
       <section class="readme-section">
         <h2 class="readme-header">8. Bootstrap grid</h2>
