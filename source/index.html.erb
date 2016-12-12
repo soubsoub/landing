@@ -53,6 +53,9 @@ title: Le Wagon 2-hour landing workshop
   <body>
     <h1>My playground app</h1>
     <p>This is the important line everyone reads..</p>
+    <p>
+      <a href="#">Start now</a>
+    </p>
 
     <h2>Fast</h2>
     <p>A fast app, <strong>very fast</strong> app</p>
@@ -182,16 +185,24 @@ a:hover {
   color: white;
   text-shadow: 1px 1px 5px black;
 }
-
-.card{
-  padding: 50px;
+#header h1 {
+  color: white;
+  font-size: 50px;
+}
+#header p {
+  color: white;
+  opacity: 0.8;
+  font-size: 30px;
   font-weight: lighter;
 }
-
 #footer{
   padding: 30px;
   background: rgb(30, 30, 30);
   color: lightgrey;
+}
+.card{
+  padding: 50px;
+  font-weight: lighter;
 }
 <% end %>
 
@@ -231,35 +242,9 @@ a:hover {
       <section class="readme-section">
         <h2 class="readme-header">7. Bootstrap setup</h2>
         <ol>
-          <li>Create a new <code>index.html</code> file with the Bootstrap template below</li>
-          <li>Inject your content in the <code>body</code></li>
+          <li>Add `<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">` to the `head` of your HTML document.</li>
           <li>Play with <code>class="btn btn-primary"</code> and <code>class="list-inline"</code>, your first Bootstrap classes</li>
         </ol>
-<% code("html") do %>
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>My landing Page</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-
-  </head>
-  <body>
-
-    <!-- TODO: insert your page content here -->
-
-    <!-- jQuery & Bootstrap javascript files -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  </body>
-</html>
-<% end %>
       </section>
       <section class="readme-section">
         <h2 class="readme-header">8. Bootstrap grid</h2>
