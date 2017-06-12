@@ -18,13 +18,13 @@ title: Le Wagon 2-hour landing workshop
             In Sublime Text left navigation:
             <ul>
               <li>Right click <strong>"New file"</strong></li>
-              <li>Save it as <code>playground.html</code> with <strong>Cmd + S</strong> or <strong>Ctrl + S</strong></li>
+              <li>Save it as <code>index.html</code> with <strong>Cmd + S</strong> or <strong>Ctrl + S</strong></li>
               <li>Do the same to create a <code>style.css</code> file</li>
               <li>Then <strong>"New Folder"</strong> and create an <code>images</code> folder</li>
             </ul>
             </ul>
           </li>
-          <li>Finally double click on <code>playground.html</code> to open it with Chrome</li>
+          <li>Finally double click on <code>index.html</code> to open it with Chrome</li>
         </ol>
 
         <img src='images/setup.png' width="100%"/>
@@ -42,7 +42,7 @@ title: Le Wagon 2-hour landing workshop
               <li><img src="images/laptop.png" alt="" width="100"></li>
             </ul>
           </li>
-          <li>Then start with this HTML code in <code>playground.html</code></li>
+          <li>Then start with this HTML code in <code>index.html</code></li>
         </ul>
 <% code("html") do %>
 <html>
@@ -245,6 +245,8 @@ a:hover {
         <p>Link Bootstrap stylesheet in the <code>head</code> section of your HTML <strong>before your stylesheet link</strong></p>
 <% code("html") do %>
 <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link href='style.css' rel='stylesheet'>
 </head>
