@@ -26,4 +26,4 @@ gem 'middleman-autoprefixer'
 
 # Markdown support
 gem "middleman-syntax"
-gem 'pygments.rb', '~> 0.6.3'
+gem 'pygments.rb'
